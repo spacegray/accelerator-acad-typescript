@@ -123,7 +123,7 @@ console.log("tuple",tup)   //tuple [ 1, 'Tom' ]
 // const large =3
 /*--------------------write code here--------------------*/
 
-const enum Size {
+enum Size {
        small = 1,
        medium = 2,
        large = 3
@@ -148,7 +148,7 @@ function print(name: string): string {
 
 // -----------------Uncomment testcases----------------------
 
-console.log(print("Max")   //Hello Max
+console.log(print("Max"));    //Hello Max
 
 // --------------------------------------------------------------------------------------------------
 // Convert javascript class in typeScript
@@ -161,12 +161,28 @@ console.log(print("Max")   //Hello Max
 //     }
 
 //     myCatData(){
-       // return `My cat name is ${this.name}, she is ${this.age} yr old and she is ${this.color}`
+//        return `My cat name is ${this.name}, she is ${this.age} yr old and she is ${this.color}`
 //     }
 // }
 /*--------------------write code here--------------------*/
+// convert the above solution to typescript
 
+(class Cat {
+              name: string;
+              age: number;
+              color: string;
 
+              constructor(name: string, age: number, color: string) {
+                     this.name = name;
+                     this.age = age;
+                     this.color = color;
+              }
+
+              myCatData(): string {
+                     return `My cat name is ${this.name}, she is ${this.age} yr old and she is ${this.color}`;
+              }
+       }
+)
 
 
 // -----------------Uncomment testcases----------------------
