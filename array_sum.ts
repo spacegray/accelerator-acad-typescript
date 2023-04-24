@@ -11,13 +11,21 @@
 // }
 /*------------------------------------------write code here-----------------------------------------------*/
 
+// convert the above solution to typescript
 
+function sumArray(arr: number[]): number {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
 
 
 
 
 
 // -----------------------------------------Uncomment testcases-------------------------------------------------------
-// console.log(sumArray([4, 3, -1, 10])); // 16
-// console.log(sumArray([6, 7, 2])); // 15
-// console.log(sumArray([])); // 0
+console.log(sumArray([4, 3, -1, 10])); // 16
+console.log(sumArray([6, 7, 2])); // 15
+console.log(sumArray([])); // 0
